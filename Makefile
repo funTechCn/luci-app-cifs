@@ -64,7 +64,7 @@ define Package/luci-app-cifs/install
 endef
 
 
-$(eval $(call BuildPackage,luci-app-cifs))
+#$(eval $(call BuildPackage,luci-app-cifs))
 
 ## Copyright (C) 2018 By-Ameng Openwrt.org
 #
@@ -80,5 +80,6 @@ $(eval $(call BuildPackage,luci-app-cifs))
 #PKG_RELEASE:=1
 
 include $(TOPDIR)/feeds/luci/luci.mk
+$(eval $(call BuildPackage,luci-app-cifs))
 # call BuildPackage - OpenWrt buildroot signature
 #
